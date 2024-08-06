@@ -1,0 +1,16 @@
+name = "TypedNamedTuples"
+uuid = "ccff231a-7084-4552-ab5c-55556ada9b2a"
+authors = ["sandyspiers <sandy.spiers@curtin.edu.au> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+Aqua = "0.8"
+Test = "1.6.7"
+julia = "1.6.7"
+
+[extras]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Aqua", "Test"]
