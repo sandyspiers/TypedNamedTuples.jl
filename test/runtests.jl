@@ -17,6 +17,10 @@ using Aqua
         @test t.c == :hello
         @test t isa TestType
 
+        @test get(t, :a, missing) == 4
+        @test get(t, :d, :none) == :none
+        @test ismissing(get(t, :d, missing))
+
         @test_throws Exception t.d
         @test_throws Exception t.a = 0
 
@@ -38,6 +42,10 @@ using Aqua
         @test t.b == rand
         @test t.c == :hello
         @test t isa MutTestType
+
+        @test get(t, :a, missing) == 4
+        @test get(t, :d, :none) == :none
+        @test ismissing(get(t, :d, missing))
 
         @test_throws Exception t.d
 

@@ -8,6 +8,7 @@ abstract type TypedNamedTuple end
 
 _nt(tnt::TypedNamedTuple) = getfield(tnt, :_nt)
 Base.getproperty(tnt::TypedNamedTuple, sym::Symbol) = getfield(_nt(tnt), sym)
+Base.get(tnt::TypedNamedTuple, sym::Symbol, default) = get(_nt(tnt), sym, default)
 
 Base.keys(tnt::TypedNamedTuple) = keys(_nt(tnt))
 Base.values(tnt::TypedNamedTuple) = values(_nt(tnt))
