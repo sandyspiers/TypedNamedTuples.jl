@@ -1,7 +1,7 @@
 name = "TypedNamedTuples"
 uuid = "ccff231a-7084-4552-ab5c-55556ada9b2a"
 authors = ["sandyspiers <sandy.spiers@curtin.edu.au> and contributors"]
-version = "1.0.0-DEV"
+version = "1.0.1"
 
 [compat]
 Aqua = "0.8"
